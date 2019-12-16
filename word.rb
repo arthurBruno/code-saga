@@ -1,9 +1,9 @@
 class Word
-  def vowels_count(frase)
-    frase.downcase.count("aeiouãẽĩõũáéíóúàèìòùâêîôû")
+  def longest(phrase)
+    phrase.split(" ").max_by(&:length)
   end
 
-  def consonants_count(frase)
-    frase.downcase.split(" ").join.count("^aeiouãẽĩõũáéíóúàèìòùâêîôû")
+  def shortest(phrase)
+    phrase.split(" ").min_by(&:length)
   end
 end
